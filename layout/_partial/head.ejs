@@ -1,0 +1,42 @@
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <%
+        var title = page.title;
+
+        if (is_archive()) {
+            title = __('archive_a');
+            if (is_month()) {
+                title += ': ' + page.year + '/' + page.month;
+            } else if (is_year()) {
+                title += ': ' + page.year;
+            }
+        } else if (is_category()) {
+            title = __('categories') + ': ' + page.category;
+        } else if (is_tag()) {
+            title = __('tags') + ': ' + page.tag;
+        }
+    %>
+    <title>
+        <% if (title) { %>
+            <%= title %> - <%= config.title %>
+        <% } else { %>
+            <%= config.title %>
+        <% } %>
+    </title>
+    <%- css("css/ringo.css") %>
+    <%- css("css/grid.css") %>
+    <%- css("css/custom.css") %>
+    <% if (theme.favicon) { %> 
+        <link rel="icon" type="image/x-icon" href="<%= url_for(theme.favicon) %> " />
+    <% } %> 
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <% if (theme.mathjax.enable && (theme.mathjax.per_page || page.mathjax)){ %>
+        <%- partial('mathjax') %>
+    <% } %>
+</head>

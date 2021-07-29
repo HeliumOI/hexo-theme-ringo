@@ -1,0 +1,35 @@
+<div class="col-12" id="main" role="main">
+  <% if (is_category()) { %> 
+    <h3 class="archive-title">
+        <%= __('categories') + ': ' + page.category; %> 
+    </h3>
+  <% } %> 
+  <% if (is_tag()) { %> 
+    <h3 class="archive-title">
+        <%= __('tags') + ': ' + page.tag; %> 
+    </h3>
+  <% } %> 
+  <ul class="post-archive">
+    <% var tempMonth; %>
+    <% page.posts.each(function (post) { %>
+      <% var currentMonth = date(post.date, 'YYYY.MM'); %>
+      <% if (tempMonth != currentMonth){ %>
+          <% tempMonth = currentMonth %>
+          <h2 class="archive-month">
+            <%- currentMonth %>
+          </h2>
+      <% } %>
+      <article class="post post-atmain archive-model" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <h2 class="archive-title" itemprop="name headline">
+          <a class="post-title" itemprop="url" href="<%- url_for(post.path) %>">
+            <time class="archive-time" itemprop="datePublished">
+              <%= date(post.date, "MM.DD" ) %>
+            </time>
+            · <%= post.title %>
+          </a>
+        </h2>
+      </article>
+    <% }) %>
+  </ul>
+</div>
+<%- partial('_partial/paginator') %>

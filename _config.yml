@@ -1,0 +1,25 @@
+
+# html lang
+language: zh-CN
+
+# main menu navigation
+menu:
+  #Home: /
+  #About: /about
+  #Contact: /contact
+  #Archives: /archives
+
+footer:
+  owner:
+    enable: true
+    since: 2020
+  custom_text: 
+  ICP: # Chinese ICP License
+    enable: false
+    url:
+    text:
+
+favicon: /img/favicon.ico
+
+busuanzi:
+  enable: true

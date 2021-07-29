@@ -1,0 +1,62 @@
+<div class="col-12" id="main" role="main">
+    <article class="post post-atpost" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-title">
+            <h1 class="post-title post-title-atpage" itemprop="name headline">
+                <a itemprop="url" href="<%- url_for(post.path) %>">
+                    <%= post.title %>
+                </a>
+            </h1>
+        </div>
+        <ul class="post-meta post-meta-atpage">
+            <li class="post-time">
+                <%- date(post.date, "YYYY-MM-DD" ) %>
+            </li>
+            <li>
+                <div class="article-category">
+                    <%- list_categories(post.categories, { show_count: false, class: 'article-category' , style: 'none'
+                        , separator: '►' }) %>
+                </div>
+            </li>
+        </ul>
+        <div class="post-content" itemprop="articleBody">
+            <% if (post.excerpt && index){ %>
+                <%- post.excerpt %>
+                <% if (theme.excerpt_link){ %>
+                  <p class="article-more-link">
+                    <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+                  </p>
+                <% } %>
+            <% } else { %>
+                <%- post.content %>
+            <% } %>
+        </div>
+        <% if (post.tags && post.tags.length) { %>
+            <p itemprop="keywords" class="tags">
+                <% post.tags.each(function(tag) { %>
+                    <a href="<%- url_for('/tags/' + tag.name) %>"> <%= tag.name %> </a>
+                <% }) %>
+            </p>
+        <% } %>
+    </article>
+
+    <% if (!is_page()) { %> 
+    <div class="post-near">
+        <div class="post-near-child post-near-child-left "> 
+            <% if (post.next) { %>
+                <a href="<%- url_for(post.next.path) %>"><%= post.next.title %></a>
+            <% } else { %>
+                <a>None</a>
+            <% } %>
+            <br /> 上一篇 &laquo;
+        </div>
+        <div class="post-near-child post-near-child-right">
+            <% if (post.prev) { %>
+                <a href="<%- url_for(post.prev.path) %>"><%= post.prev.title %></a>
+            <% } else { %>
+                <a>None</a>
+            <% } %>
+            <br /> &raquo; 下一篇
+        </div>
+    </div>
+    <% } %> 
+</div>

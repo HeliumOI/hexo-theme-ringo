@@ -1,0 +1,27 @@
+<% page.posts.each(function (post) { %>
+    <article class="post post-atmain" itemscope itemtype="http://schema.org/BlogPosting">
+        <h2 class="post-title" itemprop="name headline">
+            <a itemprop="url" class="post-title-link" href="<%- url_for(post.path) %>">
+                <%= post.title %>
+            </a>
+        </h2>
+        <ul class="post-meta">
+            <span class="post-time">
+                <%- date(post.date, "YYYY-MM-DD" ) %>
+            </span>
+            <%- partial('_partial/post/category', {post: page}) %>
+        </ul>
+        <div class="post-content">
+            <% if (post.excerpt) { %> 
+                <%- post.excerpt %>
+            <% } else { %>
+                <%- truncate(strip_html(post.content), {length: 150}) %>
+            <% } %> 
+            <p class="more">
+                <a href="<%- url_for(post.path) %>">READ MORE</a>
+            </p>
+        </div>
+    </article>
+<% }) %>
+
+<%- partial('_partial/paginator') %>

@@ -1,0 +1,23 @@
+<div id="sidebar" role="complementary">
+    <section class="widget">
+        <ul class="menu widget-list">
+            <% for (name in theme.menu) { %>
+                <li class="menu-item">
+                    <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link">
+                        <%= name %>
+                    </a>
+                </li>
+                <% } %>
+        </ul>
+    </section>
+    <section class="widget sidebar-foot">
+        <ul>
+            <section class="widget sidebar-foot">
+                <ul class="widget-list">
+                    <li>Theme <a rel="nofollow" target="_blank" href="https://github.com/memset0/typecho-theme-ringo">Ringo</a> by <a  target="_blank" href="https://memset0.cn">memset0</a></li>
+                    <li>Proudly powered by <a rel="nofollow" target="_blank" href="https://hexo.io/">Hexo</a></li>
+                </ul>
+            </section>
+        </ul>
+    </section>
+</div>

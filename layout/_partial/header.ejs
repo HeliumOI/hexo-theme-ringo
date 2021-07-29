@@ -1,0 +1,25 @@
+<header id="header" class="clearfix" onclick="window.open('/', '_self')">
+    <div class="site-name">
+        <a href="<%- url_for() %>" id="logo" class="site-title">
+            <%= config.title %>
+        </a>
+        <p class="description site-description">
+            <span style="padding-top:20px; font-size: 10px">
+                <%- config.subtitle %>
+            </span>
+        </p>
+    </div>
+</header>
+<%- partial('_partial/sidebar') %>
+
+<div id="helpbar">
+    <div class="back-to-top">
+        <button id="back2top">↑</button>
+        <script>
+            back2top.onclick = function() {
+                var movement = document.body.scrollTop || document.documentElement.scrollTop;
+                scrollBy(0, -movement);
+            }
+        </script>
+    </div>
+</div>

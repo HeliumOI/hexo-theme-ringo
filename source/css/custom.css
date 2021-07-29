@@ -1,0 +1,668 @@
+body {
+    font-family: Georgia, Palatino, "Palatino Linotype", "Palatino LT STD", source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "Songti SC", "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", Microsoft YaHei
+}
+
+code,
+pre {
+    font-family: Menlo, Monaco, "Ubuntu Mono", Consolas, source-code-pro, monospace
+}
+
+a {
+    color: #9f563a;
+    text-decoration: none
+}
+
+a:active,
+a:hover {
+    text-decoration: underline
+}
+
+p {
+    line-height: 1.6;
+    margin-block-start: 12px;
+    margin-block-end: 12px;
+    margin-inline-start: 0;
+    margin-inline-end: 0
+}
+
+h1 {
+    margin-block-start: 60px
+}
+
+h2 {
+    margin-block-start: 40px
+}
+
+h3 {
+    margin-block-start: 24px
+}
+
+h4 {
+    margin-block-start: 20px
+}
+
+h5 {
+    margin-block-start: 12px
+}
+
+h6 {
+    margin-block-start: 12px
+}
+
+code {
+    font-size: 80%;
+    color: #444;
+    border: 1px solid #ccc;
+    background: #eee;
+    padding: 2px 4px;
+    border-radius: 4px
+}
+
+blockquote {
+    margin: 1em 0;
+    padding-left: 20px;
+    border-left: 3px solid #ddd;
+    color: #444
+}
+
+.katex {
+    font-size: 105.14%!important
+}
+
+.hljs {
+    padding: 10px;
+    background: #fafafa!important;
+    font-family: Menlo, Monaco, "Ubuntu Mono", Consolas, source-code-pro, monospace
+}
+
+pre {
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #fafafa;
+    font-size: 14px;
+    color: #444;
+    margin-left: -40px;
+    margin-right: -40px;
+    max-height: none
+}
+
+pre code {
+    border: none;
+    font-size: 14px;
+    background: 0 0
+}
+
+#header,
+#small-header {
+    font-family: Georgia, Palatino, "Palatino Linotype", "Palatino LT STD", source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "Songti SC", "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", Microsoft YaHei
+}
+
+#header:hover,
+#small-header:hover {
+    background: rgba(159, 86, 58, .06);
+    cursor: pointer!important
+}
+
+#header .site-title,
+#small-header .site-title {
+    font-weight: 400;
+    color: #333!important
+}
+
+#header .site-description,
+#small-header .site-description {
+    color: #666;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px
+}
+
+#small-header {
+    text-align: center
+}
+
+#small-header .page-links {
+    margin-top: 20px
+}
+
+#small-header .page-links span:before {
+    content: ' 路 ';
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#small-header .page-links span:first-child:before {
+    content: '';
+    margin: 0
+}
+
+#comments .submit-area {
+    font-size: 0
+}
+
+#comments .text,
+#comments .textarea {
+    font-size: 14px!important;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+    resize: vertical;
+    font-size: 90%;
+    line-height: 1.6;
+    background-color: #0000;
+    color: #333;
+    vertical-align: middle;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+    overflow: visible;
+    font-family: Menlo, Monaco, "Ubuntu Mono", Consolas, source-code-pro, monospace
+}
+
+#comments .text {
+    display: inline;
+    width: calc((100% - 20px)/ 3);
+    margin-right: 10px;
+    margin-bottom: 10px
+}
+
+#comments .text:nth-last-of-type(1) {
+    margin-right: 0
+}
+
+#comments .textarea {
+    display: block;
+    padding: 20px;
+    min-height: 150px;
+    max-height: 500px;
+    margin-bottom: 10px;
+    border: 0
+}
+
+#comments .submit {
+    outline: 0;
+    display: block;
+    width: 100%;
+    color: #333;
+    background: #fff;
+    padding: auto;
+    height: 40px;
+    transition: .25s ease;
+    border: none;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02)
+}
+
+#comments .submit:hover {
+    background: #9f563a;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)!important
+}
+
+#comments .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20040725px
+}
+
+.post .tags {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.post .tags a {
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 20040725px;
+    transition: .25s;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02)
+}
+
+.post .tags a:hover {
+    text-decoration: none;
+    background: #eee;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)!important
+}
+
+.post .tags .none-tag {
+    display: none!important
+}
+
+.post-title {
+    margin: .5em 0
+}
+
+.post-title>a {
+    font-weight: 400;
+    color: #444!important
+}
+
+.post-atmain {
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.post-atmain,
+.post-atmain .post-title {
+    transition: .25s
+}
+
+.post-atmain:hover {
+    background: #f0f0f0
+}
+
+.more {
+    font-size: 80%;
+    margin: auto;
+    display: block;
+    width: 120px;
+    letter-spacing: 2px;
+    border: 1px solid #0000
+}
+
+.more:hover {
+    border: 1px solid #9f563a
+}
+
+.more a {
+    color: #999!important
+}
+
+.more:hover a {
+    color: #9f563a!important;
+    text-decoration: none
+}
+
+.post-title {
+    font-size: 22px
+}
+
+.post-meta {
+    margin-top: 0!important
+}
+
+.post-title-atpage {
+    font-size: 26px;
+    margin-top: 32px;
+    text-align: center
+}
+
+.post-title-atpage a:hover {
+    text-decoration: none
+}
+
+.post-meta-atpage {
+    margin-bottom: 64px;
+    text-align: center
+}
+
+.post-meta * {
+    color: #999!important
+}
+
+.post-meta a:hover {
+    color: #9f563a!important
+}
+
+.post-atpage {
+    border-bottom: none
+}
+
+#small-header {
+    display: none;
+    margin: -40px;
+    margin-bottom: 0;
+    padding: 40px 40px 28px;
+    background: rgba(159, 86, 58, .03);
+    box-shadow: 0 0 24px rgba(0, 0, 0, .12);
+    border-bottom: 2px solid #9f563a
+}
+
+#header {
+    position: fixed;
+    text-align: right;
+    left: calc(50% - 600px);
+    top: 40px;
+    width: 185px;
+    margin-left: calc(400px - 50%);
+    padding-left: calc(50% - 400px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 13px;
+    border-bottom: none;
+    background: rgba(159, 86, 58, .03);
+    border-right: 2px solid #9f563a
+}
+
+#sidebar {
+    position: fixed;
+    text-align: right;
+    left: calc(50% - 600px);
+    bottom: 40px;
+    width: 180px;
+    padding-right: 20px
+}
+
+#helpbar {
+    position: fixed;
+    left: calc(50% + 600px);
+    bottom: 40px;
+    padding-left: 20px
+}
+
+#body .container {
+    margin-left: calc(50% - 400px);
+    margin-right: calc(50% - 600px);
+    width: 1000px!important;
+    max-width: 1000px!important;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, .12)
+}
+
+.widget-list li ul {
+    margin-left: 0;
+    margin-right: 30px
+}
+
+#footer {
+    margin-top: 0
+}
+
+@media (max-width:1200px) {
+    #header {
+        left: calc(50% - 400px);
+        margin-left: calc(200px - 50%);
+        padding-left: calc(50% - 200px)
+    }
+    #sidebar {
+        left: calc(50% - 400px)
+    }
+    #helpbar {
+        left: calc(50% + 400px)
+    }
+    #body .container {
+        margin-left: calc(50% - 200px);
+        margin-right: calc(50% - 400px);
+        width: 600px!important;
+        max-width: 600px!important
+    }
+}
+
+@media (max-width:800px) {
+    #small-header {
+        display: block
+    }
+    #header {
+        display: none
+    }
+    #sidebar {
+        display: none
+    }
+    #helpbar {
+        display: none
+    }
+    #body .container {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%!important;
+        max-width: 100%!important
+    }
+}
+
+.site-search {
+    width: 100%;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: .25s;
+    background-color: #fff
+}
+
+.site-search:hover {
+    background-color: #eee
+}
+
+.site-search #s {
+    display: block;
+    width: 100%;
+    max-height: 40px;
+    padding: 16px;
+    resize: vertical;
+    max-width: 100%;
+    margin: 0;
+    font-size: 14px;
+    background-color: #0000;
+    line-height: 1.6;
+    color: #333;
+    vertical-align: middle;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    overflow: visible;
+    border-radius: 0;
+    font-family: Menlo, Monaco, "Ubuntu Mono", Consolas, source-code-pro, monospace;
+    border-bottom: 1px solid #EEE;
+    transition: .25s
+}
+
+.site-search .submit {
+    outline: 0
+}
+
+.site-search-top {
+    width: 100%;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: .25s;
+    background-color: #fff
+}
+
+.site-search-top:hover {
+    background-color: #eee
+}
+
+.site-search-top #s {
+    display: block;
+    width: 100%;
+    max-height: 40px;
+    padding: 16px;
+    resize: vertical;
+    max-width: 100%;
+    margin: 0;
+    font-size: 14px;
+    background-color: #0000;
+    line-height: 1.6;
+    color: #333;
+    vertical-align: middle;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    overflow: visible;
+    border-radius: 0;
+    font-family: Menlo, Monaco, "Ubuntu Mono", Consolas, source-code-pro, monospace;
+    border-bottom: 1px solid #EEE;
+    transition: .25s
+}
+
+.site-search-top .submit {
+    outline: 0
+}
+
+.post-near {
+    margin-top: 40px;
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    margin-right: -40px
+}
+
+.post-near-child {
+    width: calc(50% - 40px);
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 12px;
+    transition: .25s
+}
+
+.post-near-child>a {
+    font-size: 16px
+}
+
+.post-near-child:hover {
+    background-color: #eee;
+    text-decoration: underline
+}
+
+.post-near-child-left {
+    padding-left: 40px;
+    text-align: left
+}
+
+.post-near-child-right {
+    text-align: right;
+    padding-right: 40px
+}
+
+.page-navigator li,
+.page-navigator span,
+.page-navigator a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    border-radius: 20040725px;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+    transition: .25s
+}
+
+.page-navigator li a {
+    background: #0000;
+    color: #444;
+    transition: .25s
+}
+
+.page-navigator li:hover {
+    background: #eee;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
+}
+
+.page-navigator li:hover a {
+    background: #0000
+}
+
+.page-navigator li.current {
+    background: #9f563a
+}
+
+.page-navigator li.current a {
+    background: #0000;
+    color: #fff
+}
+
+#helpbar #back2top {
+    border: none;
+    color: #999;
+    background: 0 0;
+    font-size: 150%;
+    padding: 0;
+    outline: 0
+}
+
+.archive-model {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.archive-month {
+    color: #444;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: 80px;
+    line-height: 80px
+}
+
+.archive-title {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400
+}
+
+.archive-title>a {
+    color: #444!important
+}
+
+.archive-title>a:hover {
+    color: #444!important;
+    text-decoration: none
+}
+
+.post-content img {
+    display: block;
+    margin: auto
+}
+
+.sidebar-foot {
+    color: #888;
+    font-size: 80%;
+    font-family: Georgia, Palatino, "Palatino Linotype", "Palatino LT STD", source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "Songti SC", "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", Microsoft YaHei
+}
+
+table {
+    border: 1px solid #eee;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0!important
+}
+
+table td,
+table th {
+    padding: 5px 10px;
+    line-height: 30px;
+    border: 1px solid #eee
+}
+
+table th {
+    background: #eee
+}
+
+table tr:hover {
+    background: #eee
+}
+
+@media print {
+    #body .post-near,
+    #body .site-search,
+    #comments .comment-reply,
+    #comments .respond,
+    #header,
+    #helpbar,
+    #sidebar,
+    #small-header,
+    .no-print {
+        display: none!important
+    }
+}

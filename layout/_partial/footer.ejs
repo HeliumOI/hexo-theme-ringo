@@ -1,0 +1,17 @@
+<footer id="footer" role="contentinfo">
+    <% if (theme.footer.owner.enable) { %>
+        &copy; <%= theme.footer.owner.since %> - <%= date(page.date, "YYYY" ) %>
+        <br />
+    <% } %>
+    <%= theme.footer.custom_text %>
+    <br />
+    <% if (theme.footer.ICP.enable) { %>
+        <a rel="nofollow" href="http://beian.miit.gov.cn"> <%= theme.footer.ICP.text %>  </a>
+		<br />
+    <% } %>
+    <% if (theme.busuanzi.enable) { %>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_value_site_pv">......</span> visits ·
+        <span id="busuanzi_value_site_uv">......</span> visitors 
+    <% } %>
+</footer>

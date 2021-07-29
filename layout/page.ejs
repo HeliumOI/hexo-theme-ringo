@@ -1,0 +1,6 @@
+<% if (is_page() && page.type === 'about') { %>
+	<%- partial('_partial/article', {post: page, index: false}) %>
+<% } %>
+<% if (is_page() && page.type === 'friends') { %>
+	<%- partial('_partial/article', {post: page, index: false}) %>
+<% } %>
