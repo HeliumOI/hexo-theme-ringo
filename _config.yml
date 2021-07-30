@@ -26,3 +26,21 @@ busuanzi:
 
 # Fancybox support
 fancybox: true
+
+# Comments System
+comments:
+  use: 
+
+# Gitalk Comments
+# https://github.com/gitalk/gitalk
+gitalk:
+  owner: 
+  repo: 
+  admin: 
+  clientID: 
+  clientSecret: 
+
+# disqus
+# https://disqus.com/
+disqus:
+  shortname: 

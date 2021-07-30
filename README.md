@@ -14,7 +14,7 @@
 git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 ```
 
-## Feature 功能
+## Feature 功能 🕊️
 
 - [x] 归档、标签、分类页面
 - [x] 访问次数统计
@@ -31,8 +31,16 @@ Open sourced under the GPL v3.0 license.
 
 根据 GPL V3.0 许可证开源。
 
-## 注意事项
+## ⚠️注意事项
 
 请在博客根目录的 `_config.yml` 文件中关闭 `highlight` 代码高亮以确保代码的正常渲染。
 
-🕊️ 评论等功能正在开发中。
+```yaml
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: true
+```
