@@ -23,3 +23,6 @@ favicon: /img/favicon.ico
 
 busuanzi:
   enable: true
+
+# Fancybox support
+fancybox: true

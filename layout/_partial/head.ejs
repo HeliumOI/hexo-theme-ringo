@@ -30,13 +30,20 @@
     <% if (theme.favicon) { %> 
         <link rel="icon" type="image/x-icon" href="<%= url_for(theme.favicon) %> " />
     <% } %> 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="/js/ringo.js"></script>
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
     <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+    <!-- mathjax support -->
     <% if (theme.mathjax.enable && (theme.mathjax.per_page || page.mathjax)){ %>
         <%- partial('mathjax') %>
     <% } %>
+    <!-- fancybox support -->
+    <% if(theme.fancybox === true && page.fancybox !== false) { %>
+        <%- partial('fancybox') %>
+    <% } %> 
 </head>
