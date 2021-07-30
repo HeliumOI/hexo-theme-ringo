@@ -23,7 +23,7 @@ git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 - [x] 数学公式（MathJax）
 - [x] 代码高亮（highlight.js）
 - [x] 图片（FancyBox）
-- [x] 评论系统（Gitalk / Disqus）
+- [x] 评论系统（Gitalk / Disqus / Valine）
 - [x] 页脚备案信息
 - [ ] 文章目录
 - [ ] 全局搜索
