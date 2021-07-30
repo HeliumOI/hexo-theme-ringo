@@ -20,7 +20,7 @@ git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 - [x] 访问次数统计
 - [x] 数学公式（MathJax）
 - [x] 代码高亮（highlight.js）
-- [ ] 图片（FancyBox）
+- [x] 图片（FancyBox）
 - [ ] 评论系统
 
 ## License 许可证
