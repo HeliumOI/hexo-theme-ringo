@@ -963,6 +963,9 @@ img.alignright {
 	background: #0000;
 	color: #fff;
 }
+.page-navigator span.current {
+	color: #fff;
+}
 /* page navigator - 选页器 */
 
 /* HELPBAR */
