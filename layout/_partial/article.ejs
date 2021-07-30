@@ -19,21 +19,12 @@
             </li>
         </ul>
         <div class="post-content" itemprop="articleBody">
-            <% if (post.excerpt && index){ %>
-                <%- post.excerpt %>
-                <% if (theme.excerpt_link){ %>
-                  <p class="article-more-link">
-                    <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-                  </p>
-                <% } %>
-            <% } else { %>
-                <%- post.content %>
-            <% } %>
+            <%- post.content %>
         </div>
         <% if (post.tags && post.tags.length) { %>
             <p itemprop="keywords" class="tags">
                 <% post.tags.each(function(tag) { %>
-                    <a href="<%- url_for('/tags/' + tag.name) %>"> <%= tag.name %> </a>
+                    <a href="<%- url_for(tag.path) %>"> <%= tag.name %> </a>
                 <% }) %>
             </p>
         <% } %>
