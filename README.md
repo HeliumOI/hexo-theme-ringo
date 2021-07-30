@@ -14,6 +14,15 @@
 git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 ```
 
+## Feature 功能
+
+- [x] 归档、标签、分类页面
+- [x] 访问次数统计
+- [x] 数学公式（MathJax）
+- [x] 代码高亮（highlight.js）
+- [ ] 图片（FancyBox）
+- [ ] 评论系统
+
 ## License 许可证
 
 [![license](https://img.shields.io/github/license/HeliumOI/hexo-theme-ringo.svg?style=flat-square)](https://github.com/HeliumOI/hexo-theme-ringo/blob/master/LICENSE)
