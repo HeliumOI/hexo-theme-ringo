@@ -1,6 +1,6 @@
 <footer id="footer" role="contentinfo">
     <% if (theme.footer.owner.enable) { %>
-        &copy; <%= theme.footer.owner.since %> - <%= date(page.date, "YYYY" ) %>
+        &copy; <%= theme.footer.owner.since %> - <%= date(Date.now(), "YYYY" ) %>
         <br />
     <% } %>
     <%= theme.footer.custom_text %>

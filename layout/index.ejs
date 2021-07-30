@@ -6,10 +6,16 @@
             </a>
         </h2>
         <ul class="post-meta">
-            <span class="post-time">
-                <%- date(post.date, "YYYY-MM-DD" ) %>
-            </span>
-            <%- partial('_partial/post/category', {post: page}) %>
+            <li>
+                <time datetime="2020-09-04T20:18:00+00:00" itemprop="datePublished">
+                    <%- date(post.date, "YYYY-MM-DD" ) %>
+                </time>
+            </li>
+            <%- list_categories(post.categories, {
+                show_count: false,
+                style: 'none',
+                separator: '►'
+              }) %>
         </ul>
         <div class="post-content">
             <% if (post.excerpt) { %> 
