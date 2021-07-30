@@ -4,3 +4,9 @@
 <% if (is_page() && page.type === 'friends') { %>
 	<%- partial('_partial/article', {post: page, index: false}) %>
 <% } %>
+<% if (is_page() && page.type === 'categories') { %>
+	<%- partial('_partial/categories', {list: site.categories, type: 'categories'}) %>
+<% } %>
+<% if (is_page() && page.type === 'tags') { %>
+	<%- partial('_partial/tags') %>
+<% } %>

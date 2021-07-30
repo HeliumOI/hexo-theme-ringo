@@ -1,0 +1,16 @@
+<div class="col-12" id="main" role="main">
+    <% if (is_category()) { %> 
+      <h3 class="archive-title">
+          <%= __('categories') + ': ' + page.category; %> 
+      </h3>
+    <% } %> 
+    <% if (is_tag()) { %> 
+      <h3 class="archive-title">
+          <%= __('tags') + ': ' + page.tag; %> 
+      </h3>
+    <% } %> 
+    <ul class="post-archive">
+        <%- tagcloud(site.tags, {class: "post-title", min_font: 20, max_font: 40}) %>
+    </ul>
+  </div>
+  <%- partial('_partial/paginator') %>

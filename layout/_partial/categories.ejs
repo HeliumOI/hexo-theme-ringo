@@ -1,0 +1,24 @@
+<div class="col-12" id="main" role="main">
+    <% if (is_category()) { %> 
+      <h3 class="archive-title">
+          <%= __('categories') + ': ' + page.category; %> 
+      </h3>
+    <% } %> 
+    <% if (is_tag()) { %> 
+      <h3 class="archive-title">
+          <%= __('tags') + ': ' + page.tag; %> 
+      </h3>
+    <% } %> 
+    <ul class="post-archive">
+        <% list.each(function (tag) { %>
+        <article class="post post-atmain archive-model" itemscope="" itemtype="http://schema.org/BlogPosting">
+          <h2 class="archive-title" itemprop="name headline">
+            <a class="post-title" itemprop="url" href="<%- url_for('/' + type + '/' + tag.name) %>">
+              <%= tag.name %>
+            </a>
+          </h2>
+        </article>
+      <% }) %>
+    </ul>
+  </div>
+  <%- partial('_partial/paginator') %>
