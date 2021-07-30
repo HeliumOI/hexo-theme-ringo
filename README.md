@@ -14,14 +14,19 @@
 git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 ```
 
-## Feature 功能 🕊️
+## Feature 特性 🕊️
 
 - [x] 归档、标签、分类页面
+- [x] i18n支持
 - [x] 访问次数统计
+- [x] 回到顶部按钮
 - [x] 数学公式（MathJax）
 - [x] 代码高亮（highlight.js）
 - [x] 图片（FancyBox）
 - [x] 评论系统（Gitalk / Disqus）
+- [x] 页脚备案信息
+- [ ] 文章目录
+- [ ] 全局搜索
 
 ## License 许可证
 
