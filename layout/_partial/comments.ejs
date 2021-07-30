@@ -3,5 +3,7 @@
         <%- partial('gitalk') %>
     <% } else if (theme.comments.use === 'Disqus') { %>
         <%- partial('disqus') %>
-    <% } %>
+    <% } else if (theme.comments.use === 'Valine') { %>
+        <%- partial('valine') %>
+    <% } %> 
 </div>
