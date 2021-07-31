@@ -6,6 +6,8 @@
 
 ## Preview 预览
 
+- [Hexo-Theme-Ringo](https://ringo.sophonci117.me/)
+
 ![](https://cdn.jsdelivr.net/gh/HeliumOI/imghost@latest/ringo-demo.png)
 
 ## Download 下载
