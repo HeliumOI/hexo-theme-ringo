@@ -47,4 +47,8 @@
     <% if(theme.fancybox === true && page.fancybox !== false) { %>
         <%- partial('fancybox') %>
     <% } %> 
+    <!-- google analytics support -->
+    <% if(theme.google_analytics === true) { %>
+        <%- partial('google-analytic') %>
+    <% } %> 
 </head>

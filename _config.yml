@@ -39,6 +39,9 @@ busuanzi:
 # Fancybox support
 fancybox: true
 
+# Google Analytics Tracking ID
+google_analytics: # UA-XXXXXXXX-X
+
 # Comments System
 comments:
   use: 
