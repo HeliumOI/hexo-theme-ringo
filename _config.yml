@@ -36,8 +36,11 @@ favicon: /img/favicon.ico
 busuanzi:
   enable: true
 
+# Viewer.js support
+viewerjs: true
+
 # Fancybox support
-fancybox: true
+fancybox: false
 
 # Google Analytics Tracking ID
 google_analytics: # UA-XXXXXXXX-X
