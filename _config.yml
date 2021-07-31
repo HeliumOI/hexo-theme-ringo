@@ -13,6 +13,9 @@ highlight:
   enable: true
   theme: default
 
+prettify:
+  enable: false
+
 footer:
   owner:
     enable: true

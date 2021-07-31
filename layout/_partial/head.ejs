@@ -24,9 +24,9 @@
             <%= config.title %>
         <% } %>
     </title>
-    <%- css("css/ringo.css") %>
-    <%- css("css/grid.css") %>
-    <%- css("css/custom.css") %>
+    <%- css(url_for("css/ringo.css")) %>
+    <%- css(url_for("css/grid.css")) %>
+    <%- css(url_for("css/custom.css")) %>
     <% if (theme.favicon) { %> 
         <link rel="icon" type="image/x-icon" href="<%= url_for(theme.favicon) %> " />
     <% } %> 
@@ -34,6 +34,10 @@
     <!-- highlight support -->
     <% if(theme.highlight.enable === true) { %>
         <%- partial('highlight') %>
+    <% } %> 
+    <!-- prettify support -->
+    <% if(theme.prettify.enable === true) { %>
+        <%- partial('prettify') %>
     <% } %> 
     <!-- mathjax support -->
     <% if (theme.mathjax.enable && (theme.mathjax.per_page || page.mathjax)){ %>
