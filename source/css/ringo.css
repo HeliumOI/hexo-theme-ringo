@@ -1052,10 +1052,6 @@ table th,table td {
 	border: 1px solid #eee;
 }
 
-table td.code {
-	line-height: 0px;
-}
-
 table th {
 	background: #eee;
 }

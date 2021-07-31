@@ -9,6 +9,9 @@ menu:
   #Contact: /contact
   #Archives: /archives
 
+highlight:
+  enable: true
+
 footer:
   owner:
     enable: true
