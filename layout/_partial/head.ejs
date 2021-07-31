@@ -30,25 +30,4 @@
     <% if (theme.favicon) { %> 
         <link rel="icon" type="image/x-icon" href="<%= url_for(theme.favicon) %> " />
     <% } %> 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <!-- highlight support -->
-    <% if(theme.highlight.enable === true) { %>
-        <%- partial('highlight') %>
-    <% } %> 
-    <!-- prettify support -->
-    <% if(theme.prettify.enable === true) { %>
-        <%- partial('prettify') %>
-    <% } %> 
-    <!-- mathjax support -->
-    <% if (theme.mathjax.enable && (theme.mathjax.per_page || page.mathjax)){ %>
-        <%- partial('mathjax') %>
-    <% } %>
-    <!-- fancybox support -->
-    <% if(theme.fancybox === true && page.fancybox !== false) { %>
-        <%- partial('fancybox') %>
-    <% } %> 
-    <!-- google analytics support -->
-    <% if(theme.google_analytics === true) { %>
-        <%- partial('google-analytic') %>
-    <% } %> 
 </head>

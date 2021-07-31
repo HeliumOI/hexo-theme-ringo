@@ -1,14 +1,12 @@
 <%- css(url_for("prettify/prettify.css")) %>
-<%- css(url_for('css/prettify-themes/' + theme.prettify.theme + '.min.css')) %> 
+<%- css(url_for('css/prettify-themes/' + theme.prettify.theme + '.min.css' )) %>
 <%- js(url_for("prettify/prettify.js")) %>
-<!--<style>
-    li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
-        list-style-type: revert;
-    }
-</style>-->
+
 <script>
-    $(document).ready(function() {
-        $('pre').addClass('prettyprint linenums');
-        PR.prettyPrint();
-    })
+    var prettifyel = document.querySelectorAll('pre');
+    for (var i = 0; i < (prettifyel || []).length; i += 1) {
+        prettifyel[i].classList.add('prettyprint');
+        prettifyel[i].classList.add('linenums');
+    }
+    PR.prettyPrint();
 </script>

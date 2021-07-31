@@ -1,0 +1,20 @@
+<!-- highlight support -->
+<% if(theme.highlight.enable === true) { %>
+    <%- partial('highlight') %>
+<% } %> 
+<!-- prettify support -->
+<% if(theme.prettify.enable === true) { %>
+    <%- partial('prettify') %>
+<% } %> 
+<!-- mathjax support -->
+<% if (theme.mathjax.enable && (theme.mathjax.per_page || page.mathjax)){ %>
+    <%- partial('mathjax') %>
+<% } %>
+<!-- fancybox support -->
+<% if(theme.fancybox === true && page.fancybox !== false) { %>
+    <%- partial('fancybox') %>
+<% } %> 
+<!-- google analytics support -->
+<% if(theme.google_analytics === true) { %>
+    <%- partial('google-analytic') %>
+<% } %> 
