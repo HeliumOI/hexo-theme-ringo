@@ -19,12 +19,13 @@ git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 ## Feature 特性 🕊️
 
 - [x] 归档、标签、分类页面
-- [x] i18n支持
+- [x] i18n 支持
 - [x] 访问次数统计
 - [x] 回到顶部按钮
 - [x] 数学公式（MathJax）
 - [x] 代码高亮（Highlight.js / Prettify）
-- [x] 图片（FancyBox）
+- [x] 图片（Viewer.js）
+- [x] 无 jQuery，纯原生 JavaScript
 - [x] 评论系统（Gitalk / Disqus / Valine）
 - [x] 页脚备案信息
 - [x] Google Analytics
