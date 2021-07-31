@@ -21,7 +21,7 @@ git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 - [x] 访问次数统计
 - [x] 回到顶部按钮
 - [x] 数学公式（MathJax）
-- [x] 代码高亮（highlight.js）
+- [x] 代码高亮（Highlight.js / Prettify）
 - [x] 图片（FancyBox）
 - [x] 评论系统（Gitalk / Disqus / Valine）
 - [x] 页脚备案信息

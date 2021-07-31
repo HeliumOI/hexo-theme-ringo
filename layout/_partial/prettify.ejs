@@ -1,7 +1,14 @@
-<%- css("https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css") %>
-<%- js("https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.js") %>
+<%- css(url_for("prettify/prettify.css")) %>
+<%- css(url_for('css/prettify-themes/' + theme.prettify.theme + '.min.css')) %> 
+<%- js(url_for("prettify/prettify.js")) %>
+<!--<style>
+    li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+        list-style-type: revert;
+    }
+</style>-->
 <script>
     $(document).ready(function() {
+        $('pre').addClass('prettyprint linenums');
         PR.prettyPrint();
     })
 </script>

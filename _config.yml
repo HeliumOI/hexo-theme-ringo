@@ -9,12 +9,17 @@ menu:
   #Contact: /contact
   #Archives: /archives
 
+# Highlight.js
+# Theme: https://highlightjs.org/static/demo/
 highlight:
   enable: true
   theme: default
 
+# Prettify
+# Theme: https://jmblog.github.io/color-themes-for-google-code-prettify/
 prettify:
   enable: false
+  theme: tomorrow
 
 footer:
   owner:
