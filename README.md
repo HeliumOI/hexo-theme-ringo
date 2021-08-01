@@ -26,7 +26,7 @@ git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 - [x] 代码高亮（Highlight.js / Prettify）
 - [x] 图片（Viewer.js）
 - [x] 无 jQuery，纯原生 JavaScript
-- [x] 评论系统（Gitalk / Disqus / Valine）
+- [x] 评论系统（Gitalk / Disqus / Valine / Livere）
 - [x] 页脚备案信息
 - [x] Google Analytics
 - [ ] 文章目录
