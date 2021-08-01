@@ -3,8 +3,8 @@
 <%- js(url_for("prettify/prettify.js")) %>
 
 <script>
-    var prettifyel = document.querySelectorAll('pre');
-    for (var i = 0; i < (prettifyel || []).length; i += 1) {
+    let prettifyel = document.querySelectorAll('pre');
+    for (let i = 0; i < (prettifyel || []).length; i += 1) {
         prettifyel[i].classList.add('prettyprint');
         prettifyel[i].classList.add('linenums');
     }
