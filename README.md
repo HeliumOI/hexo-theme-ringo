@@ -1,4 +1,12 @@
-# hexo-theme-ringo
+<h1 align="center">Hexo Theme Ringo</h1>
+
+<p align="center">
+<img alt="Version" src="https://img.shields.io/github/v/release/HeliumOI/hexo-theme-ringo?color=%235755d9&include_prereleases&label=version&style=flat-square">
+<a href="https://sophonci117.me" target="_blank"><img alt="Author" src="https://img.shields.io/badge/Author-HeliumOI-b68469.svg?style=flat-square"/></a>
+<a href="https://hexo.io" target="_blank"><img alt="Hexo" src="https://img.shields.io/badge/hexo-4.0+-0e83cd.svg?style=flat-square"/></a>
+<a href="https://nodejs.org/" target="_blank"><img alt="node.js" src="https://img.shields.io/badge/node.js-10%2B-43853d.svg?style=flat-square"/></a>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/HeliumOI/hexo-theme-ringo?style=flat-square">
+</p>
 
 ## Introduction 介绍
 
