@@ -5,5 +5,7 @@
         <%- partial('comment/disqus') %>
     <% } else if (theme.comments.use === 'Valine') { %>
         <%- partial('comment/valine') %>
+    <% } else if (theme.comments.use === 'Livere') { %>
+        <%- partial('comment/livere') %>
     <% } %> 
 </div>

@@ -58,10 +58,15 @@ gitalk:
   clientID: 
   clientSecret: 
 
-# disqus
+# Disqus
 # https://disqus.com/
 disqus:
   shortname: 
+
+# Livere (來必力)
+# https://www.livere.com/
+livere:
+  uid:
 
 # Valine
 # https://valine.js.org
