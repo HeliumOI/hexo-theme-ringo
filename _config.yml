@@ -46,10 +46,11 @@ fancybox: false
 google_analytics: # UA-XXXXXXXX-X
 
 # Comments System
+# use: Gitalk / Disqus / DisqusJS / Livere / Valine
 comments:
   use: 
 
-# Gitalk Comments
+# Gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
   owner: 
@@ -62,6 +63,16 @@ gitalk:
 # https://disqus.com/
 disqus:
   shortname: 
+
+# DisqusJS
+# https://github.com/SukkaW/DisqusJS
+disqusjs:
+  shortname:
+  siteName:
+  api:
+  apikey:
+  admin:
+  adminLabel:
 
 # Livere (來必力)
 # https://www.livere.com/

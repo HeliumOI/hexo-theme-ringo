@@ -7,5 +7,7 @@
         <%- partial('comment/valine') %>
     <% } else if (theme.comments.use === 'Livere') { %>
         <%- partial('comment/livere') %>
+    <% } else if (theme.comments.use === 'DisqusJS') { %>
+        <%- partial('comment/disqusjs') %>
     <% } %> 
 </div>
