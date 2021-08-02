@@ -38,7 +38,7 @@
             <% } else { %>
                 <a>None</a>
             <% } %>
-            <br /> 上一篇 &laquo;
+            <br /> <%- __('prev') %>  &laquo;
         </div>
         <div class="post-near-child post-near-child-right">
             <% if (post.prev) { %>
@@ -46,7 +46,7 @@
             <% } else { %>
                 <a>None</a>
             <% } %>
-            <br /> &raquo; 下一篇
+            <br /> &raquo; <%- __('next') %> 
         </div>
     </div>
     <% } %> 
