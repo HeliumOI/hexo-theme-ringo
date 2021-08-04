@@ -1,0 +1,71 @@
+.page-navigator {
+	list-style: none;
+	margin: 50px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.page-navigator li,
+.page-navigator span,
+.page-navigator a {
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.page-navigator a {
+	display: inline-block;
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.page-navigator a:hover {
+	background: #EEE;
+	text-decoration: none;
+}
+
+.page-navigator .current a {
+	color: #444;
+	background: #EEE;
+}
+
+/* page navigator - 选页器 */
+.page-navigator li,
+.page-navigator span,
+.page-navigator a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	text-align: center;
+	line-height: 40px;
+	background: #fff;
+	transition: 0.25s ease;
+	border-radius: 20040725px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.page-navigator li a,
+.page-navigator a {
+	background: #0000;
+	color: #444;
+	transition: 0.25s ease;
+}
+.page-navigator li:hover {
+	background: #eee;
+}
+.page-navigator li:hover a {
+	background: #0000;
+}
+.page-navigator li.current,
+.page-navigator span.current {
+	background: #9f563a;
+}
+.page-navigator li.current a,
+.page-navigator span.current a {
+	background: #0000;
+	color: #fff;
+}
+.page-navigator span.current {
+	color: #fff;
+}
+/* page navigator - 选页器 */

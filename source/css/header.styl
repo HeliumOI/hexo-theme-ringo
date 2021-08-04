@@ -1,0 +1,117 @@
+#header {
+	padding-top: 35px;
+	border-bottom: 1px solid #EEE;
+}
+
+#logo {
+	color: #333;
+	font-size: 2rem;
+	&:hover {
+		text-decoration: none;
+	}
+	img {
+		max-height: 64px;
+	}
+}
+
+.description {
+	margin: .5em 0 0;
+	color: #999;
+	font-style: italic;
+}
+
+#nav-menu {
+	margin: 25px 0 0;
+	padding: 0;
+	a {
+		display: block;
+		margin-right: -1px;
+		padding: 0 20px;
+		border: 1px solid #EEE;
+		border-bottom: none;
+		height: 32px;
+		line-height: 32px;
+		color: #444;
+		float: left;
+	}
+	a:hover, .current {
+		background: #F6F6F6;
+	}
+}
+
+#search {
+	position: relative;
+	margin-top: 15px;
+	input {
+		padding-right: 30px;
+	}
+	button {
+		position: absolute;
+		right: 4px;
+		top: 2px;
+		border: none;
+		padding: 0;
+		width: 24px;
+		height: 24px;
+		background: transparent url(img/icon-search.png) no-repeat center center;
+		direction: ltr;
+		text-indent: -9999em;
+	}
+}
+
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
+	#search button {
+		background-image: url(img/icon-search@2x.png);
+		-webkit-background-size: 24px 24px;
+		-moz-background-size: 24px 24px;
+		-o-background-size: 24px 24px;
+		background-size: 24px 24px;
+	}
+}
+
+/* header */
+#header,
+#small-header {
+	/* transition: 0.25s; */
+	font-family: "Droid Serif",
+		Georgia,
+		"Times New Roman",
+		"PingFang SC",
+		"Hiragino Sans GB",
+		"Source Han Sans CN",
+		"WenQuanYi Micro Hei",
+		"Microsoft Yahei",
+		serif;
+	&:hover {
+		background: rgba(159, 86, 58, .06);
+		cursor: pointer !important;
+	}
+	.site-title {
+		/* letter-spacing: 2px; */
+		/* text-align: center; */
+		font-weight: 400;
+		color: #333 !important;
+	}
+	.site-description {
+		color: #666;
+		font-style: normal;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+#small-header {
+	text-align: center;
+	.page-links {
+		margin-top: 20px;
+		span:before {
+			content: ' · ';
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		span:first-child:before {
+			content: '';
+			margin: 0;
+		}
+	}
+}
