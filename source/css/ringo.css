@@ -48,9 +48,10 @@ pre code {
 
 blockquote {
 	margin: 1em 0;
-	padding-left: 1.5em;
-	border-left: 4px solid #ddd;
+	padding: 0.5em 1.5em;
+	border-left: 4px solid #9f563a;/*#ddd;*/
 	color: #666;
+	background: rgba(159,86,58,.03);
 }
 
 /*
