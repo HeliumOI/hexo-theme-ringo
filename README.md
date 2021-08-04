@@ -37,6 +37,7 @@ git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 - [x] 评论系统（Gitalk / Disqus / Valine / Livere）
 - [x] 页脚备案信息
 - [x] Google Analytics
+- [x] 图片 Lazyload（vanilla-lazyload）
 - [ ] 文章目录
 - [ ] 全局搜索
 
