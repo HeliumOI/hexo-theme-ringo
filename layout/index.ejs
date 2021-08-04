@@ -19,7 +19,7 @@
         </ul>
         <div class="post-content">
             <% if (post.excerpt) { %> 
-                <%- post.excerpt %>
+                <%- lazyloadImage(post.excerpt) %>
             <% } else { %>
                 <%- truncate(strip_html(post.content), {length: 150}) %>
             <% } %> 

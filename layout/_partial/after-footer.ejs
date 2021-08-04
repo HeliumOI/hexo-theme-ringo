@@ -22,3 +22,7 @@
 <% if(theme.google_analytics === true) { %>
     <%- partial('google-analytic') %>
 <% } %> 
+<!-- lazyload support -->
+<% if(theme.lazyload.enable === true) { %>
+    <%- partial('lazyload') %>
+<% } %> 

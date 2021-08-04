@@ -41,6 +41,12 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+# Lazyload (图片懒加载)
+# https://github.com/verlok/lazyload
+lazyload:
+  enable: true
+  loading_image: /img/loading.gif
+
 # Viewer.js support
 viewerjs: true
 
