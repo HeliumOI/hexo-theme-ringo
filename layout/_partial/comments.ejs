@@ -1,3 +1,4 @@
+<% if(!is_home() && !is_archive() && !is_tag() && !is_category()) { %> 
 <div id="comments">
     <% if (theme.comments.use === 'Gitalk') { %> 
         <%- partial('comment/gitalk') %>
@@ -11,3 +12,4 @@
         <%- partial('comment/disqusjs') %>
     <% } %> 
 </div>
+<% } %> 
