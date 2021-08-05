@@ -41,6 +41,13 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+# Verification (站长验证)
+site_verification:
+ - name: google-site-verification
+   content: 
+ - name: baidu-site-verification
+   content: 
+
 # Lazyload (图片懒加载)
 # https://github.com/verlok/lazyload
 lazyload:
