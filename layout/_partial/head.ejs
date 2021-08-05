@@ -24,6 +24,7 @@
             <%= config.title %>
         <% } %>
     </title>
+    <link rel="canonical" href="<%= full_url_for(page.path).replace('index.html', '') %>">
     <%- css(url_for("css/grid.css")) %>
     <%- css(url_for("css/custom.css")) %>
     <%- css(url_for("css/ringo.css")) %>
