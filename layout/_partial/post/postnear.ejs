@@ -1,0 +1,18 @@
+<div class="post-near">
+    <div class="post-near-child post-near-child-left "> 
+        <% if (post.next) { %>
+            <a href="<%- url_for(post.next.path) %>"><%= post.next.title %> &laquo; </a>
+        <% } else { %>
+            <a>None</a>
+        <% } %>
+        <br /> <%- __('prev') %>  &laquo;
+    </div>
+    <div class="post-near-child post-near-child-right">
+        <% if (post.prev) { %>
+            <a href="<%- url_for(post.prev.path) %>"> &raquo; <%= post.prev.title %></a>
+        <% } else { %>
+            <a>None</a>
+        <% } %>
+        <br /> &raquo; <%- __('next') %> 
+    </div>
+</div>
