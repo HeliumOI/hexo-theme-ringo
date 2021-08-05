@@ -1,5 +1,5 @@
 <% if(theme.site_verification) { %> 
-    <% theme.site_verification.each(function(item) { %> 
+    <% for(item in theme.site_verification) { %> 
         <meta name="<%= item.name %> " content="<%= item.content %>" />
-    <% }) %> 
+    <% } %> 
 <% } %> 
