@@ -36,9 +36,10 @@ git clone https://github.com/HeliumOI/hexo-theme-ringo.git themes/ringo
 - [x] 无 jQuery，纯原生 JavaScript
 - [x] 评论系统（Gitalk / Disqus / Valine / Livere）
 - [x] 页脚备案信息
-- [x] Google Analytics
+- [x] Analytics（Google / Baidu / Tencent / CNZZ / Cloudflare / Microsoft Clarity）
 - [x] 图片 Lazyload（vanilla-lazyload）
 - [x] 站长验证（Site Verification）
+- [x] 友情链接页面
 - [ ] 文章目录
 - [ ] 全局搜索
 
