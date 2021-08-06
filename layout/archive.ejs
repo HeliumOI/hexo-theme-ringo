@@ -9,19 +9,20 @@
         <%= __('tags') + ': ' + page.tag; %> 
     </h3>
   <% } %> 
-  <ul class="post-archive">
     <% var tempMonth; %>
     <% page.posts.each(function (post) { %>
       <% var currentMonth = date(post.date, 'YYYY.MM'); %>
       <% if (tempMonth != currentMonth){ %>
           <% tempMonth = currentMonth %>
-          <h2 class="archive-month">
-            <%- currentMonth %>
-          </h2>
+          <div class="post post-atmain archive-model">
+            <h2 class="archive-month">
+              <%- currentMonth %>
+            </h2>
+          </div>
       <% } %>
       <article class="post post-atmain archive-model" itemscope="" itemtype="http://schema.org/BlogPosting">
         <h2 class="archive-title" itemprop="name headline">
-          <a class="post-title" itemprop="url" href="<%- url_for(post.path) %>">
+          <a itemprop="url" href="<%- url_for(post.path) %>">
             <time class="archive-time" itemprop="datePublished">
               <%= date(post.date, "MM.DD" ) %>
             </time>
@@ -30,6 +31,5 @@
         </h2>
       </article>
     <% }) %>
-  </ul>
 </div>
 <%- partial('_partial/paginator') %>

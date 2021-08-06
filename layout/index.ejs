@@ -11,11 +11,13 @@
                     <%- date(post.date, "YYYY-MM-DD" ) %>
                 </time>
             </li>
+            <li>
             <%- list_categories(post.categories, {
                 show_count: false,
                 style: 'none',
                 separator: '►'
               }) %>
+            </li>
         </ul>
         <div class="post-content">
             <% if (post.excerpt) { %> 
