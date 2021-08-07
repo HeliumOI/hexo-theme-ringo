@@ -33,6 +33,12 @@ footer:
 
 favicon: /img/favicon.ico
 
+canonical: false
+
+auto_excerpt:
+  enable: true
+  length: 150
+
 busuanzi:
   enable: true
 

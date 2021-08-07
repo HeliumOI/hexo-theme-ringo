@@ -23,7 +23,9 @@
             <% if (post.excerpt) { %> 
                 <%- lazyloadImage(post.excerpt) %>
             <% } else { %>
-                <%- truncate(strip_html(post.content), {length: 150}) %>
+                <% if (theme.auto_excerpt.enable === true) { %> 
+                    <%- truncate(strip_html(post.content), {length: theme.auto_excerpt.length}) %>
+                <% } %> 
             <% } %> 
             <p class="more">
                 <a href="<%- url_for(post.path) %>">READ MORE</a>
