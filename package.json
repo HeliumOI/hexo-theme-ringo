@@ -1,0 +1,26 @@
+{
+  "name": "hexo-theme-ringo",
+  "version": "0.1.0",
+  "description": "A simple, concise, and fast theme for Hexo",
+  "scripts": {
+    "test": "hexo g"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeliumOI/hexo-theme-ringo.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "ringo"
+  ],
+  "author": "Sophon <sophonci117@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HeliumOI/hexo-theme-ringo/issues"
+  },
+  "homepage": "https://github.com/HeliumOI/hexo-theme-ringo#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
