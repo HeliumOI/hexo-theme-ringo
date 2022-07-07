@@ -47,6 +47,10 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+mathjax:
+  enable: true
+  per_page: true
+
 # Verification (站长验证)
 site_verification:
  - name: google-site-verification
