@@ -7,9 +7,9 @@
     <% if (theme.canonical === true) { %> 
         <link rel="canonical" href="<%= full_url_for(page.path).replace('index.html', '') %>">
     <% } %> 
-    <%- css(url_for("css/grid.css")) %>
-    <%- css(url_for("css/custom.css")) %>
-    <%- css(url_for("css/ringo.css")) %>
+    <%- css("css/grid.css") %>
+    <%- css("css/custom.css") %>
+    <%- css("css/ringo.css") %>
     <% if (theme.favicon) { %> 
         <link rel="icon" type="image/x-icon" href="<%= url_for(theme.favicon) %> " />
     <% } %> 
