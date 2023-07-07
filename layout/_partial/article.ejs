@@ -22,7 +22,7 @@
             <%- lazyloadImage(post.content) %>
             <% if (theme.post_copyright.enable === true) { %> 
                 <blockquote>
-                    <p><%- __('author') %>：<a href="<%- url_for() %> "> <%- config.author %>  </a></p>
+                    <p><%- __('author') %>：<a href="<%- theme.github %> "> <%- config.author %>  </a></p>
                     <p><%- __('link') %>：<a href="<%- url_for(post.permalink) %>"> <%- post.permalink %> </a></p>
                     <p><%- __('license_a') %> <a href="<%= theme.post_copyright.license_url %>"> <%= theme.post_copyright.license %> </a> <%- __('license_b') %></p>
                 </blockquote>
