@@ -24,7 +24,7 @@
                 <blockquote>
                     <p><%- __('author') %>：<a href="<%- url_for() %> "> <%- config.author %>  </a></p>
                     <p><%- __('link') %>：<a href="<%- url_for(post.permalink) %>"> <%- post.permalink %> </a></p>
-                    <p>版权声明：除另有声明外，本博客文章均采用 <a href="<%= theme.post_copyright.license_url %>"> <%= theme.post_copyright.license %> </a> 许可协议。转载请注明原作者与文章出处。</p>
+                    <p><%- __('license_a') %> <a href="<%= theme.post_copyright.license_url %>"> <%= theme.post_copyright.license %> </a> <%- __('license_b') %></p>
                 </blockquote>
             <% } %> 
         </div>
