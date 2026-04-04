@@ -1,6 +1,6 @@
 'use strict';
 
-const theme = hexo.config.theme_config;
+const theme = hexo.theme;
 const url_for = require('hexo-util').url_for.bind(hexo);
 
 hexo.extend.helper.register('lazyloadImage', html => {
